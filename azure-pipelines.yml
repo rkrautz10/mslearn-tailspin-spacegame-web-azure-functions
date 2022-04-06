@@ -17,7 +17,7 @@ stages:
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '3.x'
+      dotnetSdkVersion: '5.x'
 
     steps:
     - task: UseDotNet@2
@@ -72,7 +72,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubuntu-20.04'
-    environment: spike
+    environment: pico
     variables:
     - group: Release
     strategy:
