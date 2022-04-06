@@ -72,7 +72,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubuntu-20.04'
-    environment: pico
+    environment: spike
     variables:
     - group: Release
     strategy:
